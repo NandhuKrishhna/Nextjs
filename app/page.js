@@ -7,6 +7,7 @@ export default async function Home({ searchParams, params }) {
   return (
     <div>
       <h1 className="">Hello world</h1>
+      <h1></h1>
 
     </div>
   )

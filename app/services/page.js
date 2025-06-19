@@ -1,4 +1,14 @@
 import Link from "next/link"
+
+export const metadata = {
+
+    title: {
+        template: "%s | Services",
+        default: "Services"
+    }
+
+
+}
 const Services = () => {
     return (
         <div className=" min-h-screen text-center text-3xl flex flex-col  justify-center items-center gap-6">

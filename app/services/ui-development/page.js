@@ -1,3 +1,6 @@
+export const metadata = {
+    title: "UI-Dev"
+}
 const UIDevelopment = () => {
     return (
         <div>
