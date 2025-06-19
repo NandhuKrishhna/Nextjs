@@ -1,15 +1,11 @@
+'use client'
 import Link from "next/link"
-
-export const metadata = {
-
-    title: {
-        template: "%s | Services",
-        default: "Services"
-    }
+import { usePathname } from "next/navigation"
 
 
-}
 const Services = () => {
+    const path = usePathname()
+    console.log(path)
     return (
         <div className=" min-h-screen text-center text-3xl flex flex-col  justify-center items-center gap-6">
             <h2 className="text-center">Services page </h2>
