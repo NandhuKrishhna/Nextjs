@@ -3,14 +3,6 @@ import Link from "next/link";
 
 export const dynamicParams = false;
 export const revalidate = 5;
-
-export async function generateStaticParams() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos');
-    const data = await response.json();
-    return data.map(({ id }) => ({
-        product: id.toString()
-    }))
-}
 const page = async ({ params }) => {
     const { product } = await params;
     console.log("Product Id : ", product);

@@ -1,7 +1,8 @@
+import { cookies } from "next/headers";
 
 const page = async ({ searchParams }) => {
-    const search = await searchParams;
-    console.log(search);
+    const myCookies = await cookies();
+    console.log(myCookies)
     console.log("Careers page loaded");
     return (
         <div>
