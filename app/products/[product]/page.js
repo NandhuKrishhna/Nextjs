@@ -1,4 +1,3 @@
-import ProductCard from "@/app/_components/ProductCard";
 import Link from "next/link";
 
 export const dynamicParams = false;
@@ -8,11 +7,10 @@ const page = async ({ params }) => {
     console.log("Product Id : ", product);
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
-            <h1>Welcome to Our product {product}</h1>
-            <p>This is product {product} page.</p>
-            <Link className="bg-yellow-300 text-black m-1 rounded-lg text-xl p-4 hover:bg-amber-500" href='/products'>Back to Product Page</Link>
-            <p>{new Date().toLocaleString()}</p>
-            <ProductCard />
+            <Link className="bg-yellow-300 text-black m-1 rounded-lg text-xl p-2 hover:bg-amber-500" href='/products'>Back to Product Page</Link>
+            <h1 className="text-3xl">Welcome to Our product {product}</h1>
+            <p className="text-2xl">This is product {product} page.</p>
+
         </div>
     )
 }
