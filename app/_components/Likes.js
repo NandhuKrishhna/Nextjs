@@ -1,8 +1,19 @@
-const Likes = async () => {
-    await new Promise(resolve => setTimeout(resolve, 2000));
+'use client';
+
+import { useState } from "react";
+import Button from "./Button";
+
+const Likes = () => {
+    const [count, setCount] = useState(0);
+    console.log(useState);
+    console.log(count)
+    if (typeof localStorage !== "undefined") {
+        console.log("localStorage is not available");
+    }
+    console.log("Likes component loaded");
     return (
-        <div>
-            <h1>2k likes</h1>
+        <div>e
+            <Button />
         </div>
     )
 }

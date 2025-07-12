@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-export const dynamicParams = false;
-export const revalidate = 5;
 const page = async ({ params }) => {
     const { product } = await params;
     console.log("Product Id : ", product);

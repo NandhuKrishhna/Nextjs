@@ -3,7 +3,7 @@ const Button = ({ handleClick }) => {
 
     return (
         <button
-            className="bg-indigo-400 py-2 px-4 cursor-pointer rounded-lg text-white text-xl hover:bg-indigo-500"
+            className="bg-indigo-400 py-1 px-4 cursor-pointer rounded-lg text-white text-2xl hover:bg-indigo-500"
             onClick={handleClick}>
             Click</button>
     )
