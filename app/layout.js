@@ -1,5 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+
+import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,15 +15,14 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: {
     template: "%s | FitSphere",
-    default: "FitSphere"
-  }
+    default: "FitSphere",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
